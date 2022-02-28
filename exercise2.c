@@ -28,8 +28,15 @@ int count_characters(file_path[]){
 	return ch;		
 }
 
-
-void copy_text(main_file[]){ //The main_file here is a file path to the original file
+//function to copy the first 
+void copy_text(main_file[]){ //The main_file here is the absolute path name of the text file
 	char main_file[]="";
+	char first_part[];
 	int fd=open("$main_file", O_RDONLY);
+	if (fd<0){
+		printf("Error while opening text file\n");
+		}
+	else{
+					
+		
 }
